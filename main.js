@@ -1,7 +1,8 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+// import { FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 
 
 
@@ -24,17 +25,17 @@ scene.add(camera)
 
 const loader = new FontLoader();
 
-loader.load('fayyana.regular1695364536.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('HELLO WORLD', {
     font: font,
     size: 30,
     height: 5,
-    // curveSegments: 2,
-    // bevelEnabled: true,
-    // bevelThickness: 10,
-    // bevelSize: 8,
-    // bevelOffset: 0,
-    // bevelSegments: 15
+    curveSegments: 22,
+    bevelEnabled: true,
+    bevelThickness: 30,
+    bevelSize: 8,
+    bevelOffset: 0,
+    bevelSegments: 65
   });
 
   const mesh = new THREE.Mesh(geometry, [
@@ -51,6 +52,11 @@ loader.load('fayyana.regular1695364536.json', function (font) {
 
   scene.add(mesh);
 });
+
+
+
+
+
 
 
 loader.load('optimer_bold.typeface.json', function (font) {
