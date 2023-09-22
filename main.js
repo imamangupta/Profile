@@ -29,39 +29,18 @@ const loader = new FontLoader();
 
 
 
-// loader.load('optimer_bold.typeface.json', function (font) {
-//   const geometry = new TextBufferGeometry('title', {
-//     font: HelvetikerFont
-//   });
 
-//   const mesh = new THREE.Mesh(geometry, [
-//     new THREE.MeshBasicMaterial({ color: 0x484848 }),
-//     new THREE.MeshBasicMaterial({ color: 0x080808 })
-//   ]);
-
-//   mesh.position.x = -50;
-//   mesh.position.y = -100;
-//   mesh.position.z = -200;
-
-//   mesh.rotation.x -= 0.301
-//   mesh.rotation.y -= 0.301
-
-//   scene.add(mesh);
-// });
-
-
-
-loader.load('public/optimer_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('HELLO WORLD', {
     font: font,
     size: 30,
     height: 5,
-    curveSegments: 22,
-    bevelEnabled: true,
-    bevelThickness: 30,
-    bevelSize: 8,
-    bevelOffset: 0,
-    bevelSegments: 65
+    // curveSegments: 22,
+    // bevelEnabled: true,
+    // bevelThickness: 30,
+    // bevelSize: 8,
+    // bevelOffset: 0,
+    // bevelSegments: 65
   });
 
   const mesh = new THREE.Mesh(geometry, [
@@ -108,7 +87,7 @@ loader.load('optimer_bold.typeface.json', function (font) {
 
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('</>', {
     font: font,
     size: 10,
@@ -131,7 +110,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('CSS', {
     font: font,
     size: 10,
@@ -154,7 +133,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('JavaScript', {
     font: font,
     size: 10,
@@ -177,7 +156,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('React.Js', {
     font: font,
     size: 10,
@@ -204,7 +183,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('Three.Js', {
     font: font,
     size: 10,
@@ -228,7 +207,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('BootStrap', {
     font: font,
     size: 10,
@@ -251,7 +230,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 });
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('PHP', {
     font: font,
     size: 20,
@@ -273,7 +252,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
   scene.add(mesh);
 });
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('GITHUB', {
     font: font,
     size: 10,
@@ -296,7 +275,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 });
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('MongoDB', {
     font: font,
     size: 10,
@@ -318,7 +297,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
   scene.add(mesh);
 });
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('MySql', {
     font: font,
     size: 10,
@@ -341,7 +320,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 });
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('jQuery', {
     font: font,
     size: 20,
@@ -365,7 +344,30 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 
 
 
-loader.load('./fonts/gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
+  const geometry = new TextGeometry('MERN APP', {
+    font: font,
+    size: 40,
+    height: 3,
+  });
+
+  const mesh = new THREE.Mesh(geometry, [
+    new THREE.MeshBasicMaterial({ color: 0x08FE0F }),
+    new THREE.MeshBasicMaterial({ color: 0x080808 })
+  ]);
+
+  mesh.position.x = -50;
+  mesh.position.y = -550;
+  mesh.position.z = -300;
+
+  mesh.rotation.x -= 1.201
+  // mesh.rotation.y = 0.901
+  
+  scene.add(mesh);
+});
+
+
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('Node.js', {
     font: font,
     size: 20,
@@ -377,38 +379,20 @@ loader.load('./fonts/gentilis_bold.typeface.json', function (font) {
     new THREE.MeshBasicMaterial({ color: 0x080808 })
   ]);
 
-  mesh.position.x = 390;
-  mesh.position.y = 30;
-  mesh.position.z = -50;
+  mesh.position.x = -50;
+  mesh.position.y = 150;
+  mesh.position.z = -300;
 
-  // mesh.rotation.x -= 1.201
-  mesh.rotation.y -= 0.901
+  mesh.rotation.x = .201
+  // mesh.rotation.y = 0.901
   
   scene.add(mesh);
 });
 
 
-loader.load('./fonts/gentilis_bold.typeface.json', function (font) {
-  const geometry = new TextGeometry('MERN APP', {
-    font: font,
-    size: 30,
-    height: 3,
-  });
 
-  const mesh = new THREE.Mesh(geometry, [
-    new THREE.MeshBasicMaterial({ color: 0xA9EEFF }),
-    new THREE.MeshBasicMaterial({ color: 0x080808 })
-  ]);
 
-  mesh.position.x = 790;
-  mesh.position.y = -230;
-  mesh.position.z = -100;
 
-  // mesh.rotation.x -= 1.201
-  mesh.rotation.y -= 0.901
-  
-  scene.add(mesh);
-});
 
 
 
@@ -440,7 +424,7 @@ scene.add(particlesMesh)
 
 
 
-const sphereGeometry3 = new THREE.BoxGeometry(5, 5, 5);
+const sphereGeometry3 = new THREE.BoxGeometry(15, 15, 15);
 const sphereMaterial3 = new THREE.MeshBasicMaterial({ color: 0x46FF00 ,wireframe:true });
 const sphere3 = new THREE.Mesh(sphereGeometry3, sphereMaterial3);
 scene.add(sphere3);
