@@ -376,8 +376,8 @@ canvas {
 
 
 .contact-link a img{
-  width: 60px;
-  border-radius: 15px;
+  width: 40px;
+  border-radius: 9px;
   cursor: pointer;
 }
 

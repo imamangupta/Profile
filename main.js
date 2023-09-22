@@ -6,14 +6,16 @@ import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 
 
 const scene = new THREE.Scene();
+
+
 // Importing Things
 
 
 const textureLoader = new THREE.TextureLoader();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight);
+const camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight,10,3000);
 // camera.position.z = 3
 // camera.position.set(0, 0, 0);
-camera.position.set(-10, 30, 30);
+camera.position.set(-16, 11, 74);
 scene.add(camera)
 
 // Sitting the camera position in the windows
@@ -25,7 +27,7 @@ const loader = new FontLoader();
 loader.load('gentilis_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('HELLO WORLD', {
     font: font,
-    size: 10,
+    size: 30,
     height: 5,
     // curveSegments: 2,
     // bevelEnabled: true,
@@ -42,7 +44,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 
   mesh.position.x = -50;
   mesh.position.y = -100;
-  mesh.position.z = -100;
+  mesh.position.z = -200;
 
   mesh.rotation.x -= 0.301
   mesh.rotation.y -= 0.301
@@ -51,7 +53,7 @@ loader.load('gentilis_bold.typeface.json', function (font) {
 });
 
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('HTML', {
     font: font,
     size: 10,
@@ -389,7 +391,7 @@ const particlesCnt = 2000;
 const posArray = new Float32Array(particlesCnt * 3);
 
 for (let i = 0; i < particlesCnt * 3; i++) {
-  posArray[i] = (Math.random() - 0.5) * 200
+  posArray[i] = (Math.random() - 0.5) * 400
 }
 
 particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3))
@@ -465,7 +467,7 @@ const tick = () => {
   sphere5.rotation.x += 0.0051
 
 
-
+  // console.log(camera.position);
   renderer.render(scene, camera)
 }
 tick()
