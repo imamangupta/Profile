@@ -437,7 +437,9 @@ canvas {
 .about_img {
   width: 50%;
 }
-
+/* .setdownfooter{
+  width: auto;
+} */
 
 @media (max-width:600px) {
   .about_section {
@@ -518,5 +520,8 @@ canvas {
   }
   .p-inner-header-para {
     width: 100%;
+}
+.setdownfooter{
+  width: 100%;
 }
 }
