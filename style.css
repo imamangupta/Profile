@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,24 +8,24 @@
 
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(108deg, #46d3ff .14%, #6178ff 24.02%, #a750ff 39.05%, #ff1ec0 56.82%, #ff784b 77.82%, #ffce51 95.45%);
+  background: linear-gradient(108deg, #46d3ff .14%, #6178ff 24.02%, #a750ff 39.05%, #ff1ec0 56.82%, #ff784b 77.82%, #ffce51 95.45%);
 }
 
-body{
+body {
   background-color: #0d1117;
   color: white;
   font-family: 'Work Sans', sans-serif;
@@ -33,7 +33,7 @@ body{
 
 }
 
-div{
+div {
   user-select: none;
 }
 
@@ -60,18 +60,18 @@ div{
 
 @keyframes ring {
   0% {
-      transform: rotate(0deg);
-      box-shadow: 1px 5px 2px #e65c00;
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
   }
 
   50% {
-      transform: rotate(180deg);
-      box-shadow: 1px 5px 2px #18b218;
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b218;
   }
 
   100% {
-      transform: rotate(360deg);
-      box-shadow: 1px 5px 2px #0456c8;
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #0456c8;
   }
 }
 
@@ -96,7 +96,7 @@ div{
 
 }
 
-.scroll_down{
+.scroll_down {
   position: absolute;
   bottom: 0px;
 
@@ -104,7 +104,7 @@ div{
   background-color: #00000033;
 }
 
-.firstscroll{
+.firstscroll {
   animation: scrol1 2s linear 1;
   opacity: 0;
   color: black;
@@ -126,7 +126,7 @@ div{
 }
 
 
-.secondscroll{
+.secondscroll {
   animation: scrol2 4s linear 1;
   opacity: 0;
   color: black;
@@ -200,11 +200,12 @@ canvas {
 
 /* Git Intro start  */
 
-.intro-start{
+.intro-start {
   display: flex;
   justify-content: center;
 }
-.intro-inner{
+
+.intro-inner {
   width: 1200px;
   border-radius: 5px;
   padding: 20px;
@@ -213,28 +214,33 @@ canvas {
   background: #161b22;
   border: 1px solid #2f353c;
 }
-.git-acc-inner{
+
+.git-acc-inner {
   width: 50%;
 }
-.git-dis-contant{
+
+.git-dis-contant {
   font-size: 25px;
   margin: 40px 60px 58px 39px;
 }
+
 .git-link-a {
   margin-left: 35px;
   font-size: 20px;
 }
-.link-a{
+
+.link-a {
   color: white;
- text-decoration: none;
+  text-decoration: none;
   padding-bottom: 5px;
 }
-.link-a:hover{
+
+.link-a:hover {
   border-bottom: 1.5px solid white;
- 
+
 }
 
-.code-file-setup{
+.code-file-setup {
   padding: 10px;
   font-size: 15px;
   font-family: 'Inconsolata', monospace;
@@ -242,7 +248,7 @@ canvas {
   margin-top: -1px;
 }
 
-.intro-code{
+.intro-code {
   background: #0d1117;
   margin-top: 32px;
   margin-bottom: 25px;
@@ -250,7 +256,8 @@ canvas {
   border: 1px solid #2f353c;
   width: 50%;
 }
-.intro-code-file{
+
+.intro-code-file {
   display: flex;
   background: #161b22;
   /* padding: 10px; */
@@ -259,7 +266,7 @@ canvas {
   padding-left: 10px;
 }
 
-.intro-code-js{
+.intro-code-js {
   background: #0d1117;
   padding: 10px 18px;
   border-top-left-radius: 5px;
@@ -281,12 +288,12 @@ canvas {
 
 
 
-.info-down-section{
+.info-down-section {
   display: flex;
   justify-content: center;
 }
 
-.container-style{
+.container-style {
   width: 593px;
   padding: 10px;
   margin: 10px 5px 0px 5px;
@@ -296,10 +303,12 @@ canvas {
   font-size: 20px;
   border: 1px solid #2f353c;
 }
-.social-info-para{
+
+.social-info-para {
   padding: 55px;
-   font-size: 27px;
+  font-size: 27px;
 }
+
 /* linkdin and instagram link end */
 
 
@@ -309,11 +318,12 @@ canvas {
 /* project section start */
 
 
-.p-container{
+.p-container {
   display: flex;
   justify-content: center;
 }
-.project-section{
+
+.project-section {
   width: 1200px;
   border-radius: 5px;
   padding: 20px;
@@ -321,14 +331,17 @@ canvas {
   background: #161b22;
   border: 1px solid #2f353c;
 }
-.p-inner-header-para{
+
+.p-inner-header-para {
   width: 50%;
 }
-.p-inner-first{
+
+.p-inner-first {
   display: flex;
   justify-content: center;
 }
-.p-contant-set{
+
+.p-contant-set {
   border-radius: 5px;
   padding: 15px;
   color: white;
@@ -336,15 +349,18 @@ canvas {
   border: 1px solid #2f353c;
   margin: 15px;
 }
-.p-show-img{
+
+.p-show-img {
   width: 338px;
 }
-.project_name{
+
+.project_name {
   color: white;
   text-decoration: none;
   transition: 300ms;
 }
-.project_name:hover{
+
+.project_name:hover {
   transition: 300ms;
   color: rgb(112, 198, 255);
 }
@@ -357,25 +373,28 @@ canvas {
 
 /* Contact section start  */
 
-.contact-head{
+.contact-head {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.contact-img{
+
+.contact-img {
   width: 180px;
   border-radius: 50%;
 }
-.contact-main-sec{
+
+.contact-main-sec {
   text-align: center;
   margin-top: 40px;
 }
-.contact-link{
+
+.contact-link {
   margin: 20px;
 }
 
 
-.contact-link a img{
+.contact-link a img {
   width: 40px;
   border-radius: 9px;
   cursor: pointer;
@@ -395,9 +414,109 @@ canvas {
 
 /* Footer section Start  */
 
-.footer-section{
+.footer-section {
   padding: 20px;
   text-align: center;
   background: #131922;
 }
+
 /* Footer section End */
+
+
+
+
+.about_section {
+  display: flex;
+  justify-content: center;
+}
+
+.about_contant {
+  width: 50%;
+}
+
+.about_img {
+  width: 50%;
+}
+
+
+@media (max-width:600px) {
+  .about_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_contant {
+    width: auto;
+  }
+
+  .about_img {
+    width: auto;
+    margin-top: 20px;
+  }
+
+  .intro-inner {
+    width: auto;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    background: #161b22;
+    border: 1px solid #2f353c;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .git-acc-inner {
+    width: auto;
+  }
+
+  .git-dis-contant {
+    font-size: 25px;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+  }
+
+  .git-link-a {
+    margin-left: 21px;
+    font-size: 20px;
+  }
+
+  .intro-code {
+
+    width: auto;
+  }
+
+  .info-down-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .container-style {
+    width: auto;
+
+  }
+
+  .social-info-para {
+    padding: 21px;
+    font-size: 27px;
+  }
+
+  .p-inner-first {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .project-section {
+    width: auto;
+
+    margin: 10px;
+  }
+  .p-inner-header-para {
+    width: 100%;
+}
+}

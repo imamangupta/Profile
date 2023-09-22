@@ -12,7 +12,7 @@ const scene = new THREE.Scene();
 
 
 const textureLoader = new THREE.TextureLoader();
-const camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight,10,3000);
+const camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight,1,1000);
 // camera.position.z = 3
 // camera.position.set(0, 0, 0);
 camera.position.set(-16, 11, 74);
@@ -24,7 +24,7 @@ scene.add(camera)
 
 const loader = new FontLoader();
 
-loader.load('gentilis_bold.typeface.json', function (font) {
+loader.load('fayyana.regular1695364536.json', function (font) {
   const geometry = new TextGeometry('HELLO WORLD', {
     font: font,
     size: 30,
