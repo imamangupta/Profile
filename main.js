@@ -3,10 +3,12 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 // import { FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
+import HelvetikerFont from 'three/examples/fonts/helvetiker_regular.typeface.json';
 
 
 
 const scene = new THREE.Scene();
+
 
 
 // Importing Things
@@ -25,7 +27,31 @@ scene.add(camera)
 
 const loader = new FontLoader();
 
-loader.load('optimer_bold.typeface.json', function (font) {
+
+
+// loader.load('optimer_bold.typeface.json', function (font) {
+//   const geometry = new TextBufferGeometry('title', {
+//     font: HelvetikerFont
+//   });
+
+//   const mesh = new THREE.Mesh(geometry, [
+//     new THREE.MeshBasicMaterial({ color: 0x484848 }),
+//     new THREE.MeshBasicMaterial({ color: 0x080808 })
+//   ]);
+
+//   mesh.position.x = -50;
+//   mesh.position.y = -100;
+//   mesh.position.z = -200;
+
+//   mesh.rotation.x -= 0.301
+//   mesh.rotation.y -= 0.301
+
+//   scene.add(mesh);
+// });
+
+
+
+loader.load('public/optimer_bold.typeface.json', function (font) {
   const geometry = new TextGeometry('HELLO WORLD', {
     font: font,
     size: 30,
