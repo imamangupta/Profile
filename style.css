@@ -475,7 +475,7 @@ canvas {
   }
 
   .git-dis-contant {
-    font-size: 25px;
+    font-size: 18px;
     margin: 0px 0px 0px 0px;
     padding: 20px;
   }
@@ -484,6 +484,10 @@ canvas {
     margin-left: 21px;
     font-size: 20px;
   }
+  .social-info-para {
+    padding: 21px;
+    font-size: 17px;
+}
 
   .intro-code {
 
