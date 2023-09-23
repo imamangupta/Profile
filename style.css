@@ -129,7 +129,7 @@ div {
 .secondscroll {
   animation: scrol2 4s linear 1;
   opacity: 0;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 @keyframes scrol2 {
@@ -441,6 +441,11 @@ canvas {
   width: auto;
 } */
 
+.project-contant-area{
+  margin-top: 5px;
+  font-size: 15px;
+}
+
 @media (max-width:600px) {
   .about_section {
     display: flex;
@@ -451,6 +456,7 @@ canvas {
 
   .about_contant {
     width: auto;
+    padding: 10px;
   }
 
   .about_img {
@@ -493,6 +499,12 @@ canvas {
 
     width: auto;
   }
+  .project-contant-area{
+    margin-top: 5px;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+  }
 
   .info-down-section {
     display: flex;
@@ -519,8 +531,12 @@ canvas {
 
   .project-section {
     width: auto;
-
+    padding: 0px;
     margin: 10px;
+  }
+  .p-contant-set {
+    border-radius: 5px;
+    padding: 0px;
   }
   .p-inner-header-para {
     width: 100%;
